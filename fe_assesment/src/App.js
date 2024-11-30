@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import ProductPage from './project/productpage';
+// import 
 
 function App() {
   return (
     <div className="App">
-      <h1>hello world</h1>
+    <ProductPage/>
     </div>
   );
 }
