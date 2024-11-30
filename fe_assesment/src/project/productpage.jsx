@@ -50,7 +50,7 @@ const ProductBox = ({ title, price, discount, size, color, isPopular }) => {
 export default function ProductPage(){
   return (
     <div>
-      <h2 className="text-2xl text-pink-500 mb-4">YAY! It's BOGO</h2>
+      <h2 className="text-2xl text-pink-500 mb-4" style={{color:'#FF6B82'}}>YAY! It's BOGO</h2>
       <ProductBox
         title="1 Unit"
         price={10}
@@ -69,8 +69,12 @@ export default function ProductPage(){
         discount={30}
         isPopular={false}
       />
+      <div style={{display:'flex',justifyContent:'space-between'}}>
+        <h1 style={{color:'#FF6B82',size:'14px'}}>Free Delivery</h1>
+        <h1>Total : $18.00 USD</h1>
+      </div>
       <a href="#" className="add-to-cart">
-        Add to Cart
+        + Add to Cart
       </a>
     </div>
   );
